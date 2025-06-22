@@ -139,7 +139,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025 (<oral>Oral</oral>)'
+      name: 'IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025 (<oral>Oral Presentation</oral>)'
     description: >-
       In offline reinforcement learning (RL), learning from fixed datasets presents a promising solution for domains 
       where real-time interaction with the environment is expensive or risky. However, designing dense reward signals 
@@ -301,7 +301,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE Access, 2024 <br>IROS Policy Learning in Geometric Spaces Workshop, 2023 (<oral>Spotlight</oral>)'
+      name: 'IEEE Access, 2024 <br>IROS Policy Learning in Geometric Spaces Workshop, 2023 (<oral>Spotlight Talk</oral>)'
     description: >-
       Offline reinforcement learning (RL) has garnered significant interest due to its safe and easily scalable paradigm, 
       which essentially requires training policies from pre-collected datasets without the need for additional 

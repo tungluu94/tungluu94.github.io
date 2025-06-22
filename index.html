@@ -124,7 +124,6 @@
         <a href="https://www.linkedin.com/in/tungluu94">Linkedin</a> &nbsp/&nbsp
         <a href="mailto:tungluu2203@gmail.com">Email</a>
 
-        <!-- The Modal -->
       </p>
     </div>
 
@@ -133,40 +132,16 @@
     </div>
   </div>
 
-  <script>
-      // Get the modal
-      var modal = document.getElementById('popup-img');
-
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('myImg');
-      var modalImg = document.getElementById("img01");
-      var captionText = document.getElementById("caption");
-      img.onclick = function () {
-          modal.style.display = "block";
-          modalImg.src = "images/Wechat.jpeg";
-          // modalImg.alt = this.alt;
-          // captionText.innerHTML = this.alt;
-      }
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-          modal.style.display = "none";
-      }
-  </script>
-
   <!-- News -->
   <div style="width:100%; text-align:left;">
     <heading>News</heading>
   </div>
 
-  <div style="width:100%; text-align:left;margin-top:10; ">
-    <li><b>06/2025</b> A paper is accepted to IROS 2025.</li>
-    <li><b>05/2025</b> A paper is accepted to ICML 2025.</li>
-    <li><b>12/2024</b> Two papers are accepted to ICASSP 2025.</li>
-    <li><b>06/2024</b> Two papers are accepted to IROS 2024.</li>
+  <div style="width:100%; text-align:left;margin-top:10;" class="new-list">
+    <li><strong>06/2025</strong>: A paper is accepted to IROS 2025.</li>
+    <li><strong>05/2025</strong>: A paper is accepted to ICML 2025.</li>
+    <li><strong>12/2024</strong>: Two papers are accepted to ICASSP 2025.</li>
+    <li><strong>06/2024</strong>: Two papers are accepted to IROS 2024.</li>
   </div>
 
   <style>
@@ -189,6 +164,7 @@
       }
   </script>
 
+  <!-- Research -->
   <div style="width:100%; text-align:left; margin-top:20; ">
     <heading>Research</heading>
     <a style="font-size: 17px; color: black;">(</a>
@@ -210,52 +186,50 @@
       <div class="zero" style="flex: 1 0 270px;margin-top:0px;margin-right:20px;max-width:270px;">
         <div class="one">
           {{#unless nogif}}
-          <div class="two" id='{{name}}_image' , style="opacity: 0">
+          <div class="two" id='{{name}}_image', style="opacity: 0">
             <img src='images/{{name}}_after.gif' class="paper_img">
           </div>
           {{/unless}}
           {{#if img2}}
-          <div class="two" id='{{name}}_image' , style="opacity: 0">
+          <div class="two" id='{{name}}_image', style="opacity: 0">
             <img src='images/{{name}}_after.png' class="paper_img">
           </div>
           {{/if}}
           <img id='{{name}}_gif' src='images/{{name}}_before.png' class="paper_img">
         </div>
-        <!-- {{#unless nogif}}
-        <p style="text-align: center;margin-top:0.4em;margin-bottom:0em;color:Gray;"><i> Hover/tap to play the gif</i></p>
-        {{/unless}} -->
+<!--        {{#unless nogif}}-->
+<!--        <p style="text-align: center;margin-top:0.4em;margin-bottom:0em;color:Gray;"><i> Hover/tap to play the gif</i></p>-->
+<!--        {{/unless}}-->
       </div>
+
       <div style="flex: 10000 1 400px;margin-bottom:10px;" valign="top">
         <p class="paper_title" style="margin-top:0em;">{{#if title.link}}<a href={{title.link}}>{{else}}<a>{{/if}}
           <papertitle>{{title.name}}</papertitle>
         </a>
-          <br>
-          {{#authors}}
-          {{#if me}}
-          <strong><u>Tung M. Luu</u></strong>{{#if star}}*{{/if}}{{#unless @last}}, {{/unless}}
-          {{else}}
-          {{#if href}}
-          <a class="black_link" href={{href}}>{{name}}</a>{{#if star}}*{{/if}}{{#if star2}}<sup>&#8224;</sup>
-          {{/if}}{{#unless @last}}, {{/unless}}
-          {{else}}
-          <a class="black_link">{{name}}</a>{{#if star}}*{{/if}}{{#if star2}}<sup>&#8224;</sup>{{/if}}{{#unless @last}},
-          {{/unless}}
-          {{/if}}
-          {{/if}}
-          {{/authors}}
+        <br>
+        {{#authors}}
+        {{#if me}}
+        <strong>Tung M. Luu</strong>{{#if star}}*{{/if}}{{#unless @last}}, {{/unless}} {{else}} {{#if href}}
+        <a class="black_link" href={{href}}>{{name}}</a>{{#if star}}*{{/if}}{{#if star2}}<sup>&#8224;</sup>
+        {{/if}}{{#unless @last}}, {{/unless}}
+        {{else}}
+        <a class="black_link">{{name}}</a>{{#if star}}*{{/if}}{{#if star2}}<sup>&#8224;</sup>{{/if}}{{#unless @last}},
+        {{/unless}}
+        {{/if}}
+        {{/if}}
+        {{/authors}}
 
-          <br>
-          <font color="Gray"><i>{{{conference.name}}}</i></font>
-          <br>
-          {{#links}}
-          {{#if href}}
-          <a href={{href}}>{{name}}</a>{{#unless @last}} | {{/unless}}
-          {{else}}
-          <a class="black_link">{{name}}</a>{{#unless @last}} | {{/unless}}
-          {{/if}}
-          {{/links}}
+        <br>
+        <font color="Gray"><i>{{{conference.name}}}</i></font>
+        <br>
+        {{#links}}
+        {{#if href}}
+        <a href={{href}}>{{name}}</a>{{#unless @last}} | {{/unless}}
+        {{else}}
+        <a class="black_link">{{name}}</a>{{#unless @last}} | {{/unless}}
+        {{/if}}
+        {{/links}}
         </p>
-        <!--                <p style="margin-bottom:0em;">{{description}}</p>-->
         <div class="toggle-container">
           <span class="toggle-other-text">Description</span>
           <label class="toggle">
@@ -275,13 +249,9 @@
       renderHello()
   </script>
 
-  <!-- This <i> tag was for some reason necessary for the publication list switch to work -->
-  <!-- <i> -->
-
   <!-- Service -->
   <div style="width:100%; text-align:left; margin-top:20;">
     <heading>Conference Reviewing</heading>
-    <br>
   </div>
   <div style="width:100%; text-align:left; margin-top:10;">
     <li>ICLR (2025),
@@ -293,21 +263,20 @@
 
   <div style="width:100%; text-align:left; margin-top:20;">
       <heading>Teaching Assistance</heading>
-      <br>
   </div>
   <div style="width:100%; text-align:left; margin-top:10;">
-      <li>Seongnam - KAIST Next Generation ICT Research Center Reinforcement Learning Course: 2024 Fall</li>
-      <li>Seongnam - KAIST Next Generation ICT Research Center EE Co-op+ Joint Research Program: 2022 Fall, 2023 Spring</li>
-      <li>Statistical Learning Theory: 2019 Fall, 2020 Fall</li>
-      <li>Introduction to Machine Learning: 2020 Spring</li>
+    <li>Seongnam - KAIST Next Generation ICT Research Center Reinforcement Learning Course: 2024 Fall</li>
+    <li>Seongnam - KAIST Next Generation ICT Research Center EE Co-op+ Joint Research Program: 2022 Fall, 2023 Spring</li>
+    <li>Statistical Learning Theory: 2019 Fall, 2020 Fall</li>
+    <li>Introduction to Machine Learning: 2020 Spring</li>
   </div>
 
   <div style="width:100%; text-align:left; margin-top:20;">
       <heading>Experience</heading>
-      <br>
   </div>
   <div style="width:100%; text-align:left; margin-top:10;">
-    <li><b>2015-2017</b> Software Engineer at <a href="https://ginno.com">G-Innovations</a>, Vietnam.</li>
+    <li><strong>2015-2017</strong> Software Engineer at <a href="https://ginno.com">G-Innovations</a></li>
+    <li><strong>2014-2017</strong> Undergradute Researcher at <a href="https://sites.google.com/set.hust.edu.vn/hust-edabk-lab/home?authuser=0">EDABK Lab</a></li>
   </div>
 
 
