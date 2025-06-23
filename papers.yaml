@@ -582,7 +582,7 @@ papers:
   - name: ccfdm
     title:
       name: 'Sample-efficient reinforcement learning representation learning with curiosity contrastive forward dynamics model'
-      link: https://arxiv.org/abs/2103.08255'
+      link: 'https://arxiv.org/abs/2103.08255'
     authors:
       - name: Xuan Thanh Nguyen
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
