@@ -2,7 +2,7 @@ papers:
   - name: plare
     title:
       name: 'Policy Learning from Large Vision-Language Model Feedback Without Reward Modeling'
-      link: ''
+      link: 'https://arxiv.org/abs/2507.23391'
     authors:
       - me: true
       - name: Donghoon Lee
@@ -28,9 +28,11 @@ papers:
       tasks from the MetaWorld, PLARE achieves performance on par with or surpassing existing state-of-the-art VLM-based 
       reward generation methods. Furthermore, we demonstrate the effectiveness of PLARE in real-world manipulation tasks
       with a physical robot, further validating its practical applicability.
-#    links:
-#      - name: arXiv
-#        href: 'https://www.arxiv.org/abs/2506.12822'
+    links:
+      - name: arXiv
+        href: 'https://arxiv.org/abs/2507.23391'
+      - name: code
+        href: 'https://github.com/tunglm2203/plare'
     img2: false
     nogif: true
     highlighted: true
