@@ -2,7 +2,7 @@ papers:
   - name: plare
     title:
       name: 'Policy Learning from Large Vision-Language Model Feedback Without Reward Modeling'
-      link: 'https://arxiv.org/abs/2507.23391'
+      link: 'https://arxiv.org/pdf/2507.23391'
     authors:
       - me: true
       - name: Donghoon Lee
@@ -40,7 +40,7 @@ papers:
   - name: erlvlm
     title:
       name: 'Enhancing Rating-Based Reinforcement Learning to Effectively Leverage Feedback from Large Vision-Language Models'
-      link: 'https://www.arxiv.org/abs/2506.12822'
+      link: 'https://www.arxiv.org/pdf/2506.12822'
     authors:
       - me: true
       - name: Younghwan Lee
@@ -86,7 +86,7 @@ papers:
   - name: lvlm2p
     title:
       name: 'Sample Efficient Reinforcement Learning via Large Vision Language Model Distillation'
-      link: 'https://arxiv.org/abs/2505.11221'
+      link: 'https://arxiv.org/pdf/2505.11221'
     authors:
       - name: Donghoon Lee
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
@@ -127,7 +127,7 @@ papers:
   - name: rgvlm
     title:
       name: 'Reward Generation via Large Vision-Language Model in Offline Reinforcement Learning'
-      link: 'https://arxiv.org/abs/2504.08772'
+      link: 'https://arxiv.org/pdf/2504.08772'
     authors:
       - name: Younghwan Lee
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,YoungHwan%20Lee,-%E2%97%8B%20Email%20Address'
@@ -164,7 +164,7 @@ papers:
   - name: pcdt
     title:
       name: 'Predictive Coding for Decision Transformer'
-      link: 'https://arxiv.org/abs/2410.03408'
+      link: 'https://arxiv.org/pdf/2410.03408'
     authors:
       - me: true
         star: True
@@ -204,7 +204,7 @@ papers:
   - name: vq_robust_rl
     title:
       name: 'Mitigating Adversarial Perturbations for Deep Reinforcement Learning via Vector Quantization'
-      link: 'https://arxiv.org/abs/2410.03376'
+      link: 'https://arxiv.org/pdf/2410.03376'
     authors:
       - me: true
       - name: Xuan Thanh Nguyen
@@ -244,7 +244,7 @@ papers:
   - name: scalable_softgroup
     title:
       name: 'Scalable SoftGroup for 3D Instance Segmentation on Point Clouds'
-      link: 'https://arxiv.org/abs/2209.08263'
+      link: 'https://arxiv.org/pdf/2209.08263'
     authors:
       - name: Thang Vu
         href: 'https://thangvubk.github.io'
@@ -333,7 +333,7 @@ papers:
   - name: dimcl
     title:
       name: 'DimCL: Dimensional Contrastive Learning for Improving Self-Supervised Learning'
-      link: 'https://arxiv.org/abs/2309.11782'
+      link: 'https://arxiv.org/pdf/2309.11782'
     authors:
       - name: Xuan Thanh Nguyen
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
@@ -373,7 +373,7 @@ papers:
   - name: softgroup
     title:
       name: 'SoftGroup for 3D Instance Segmentation on Point Clouds'
-      link: 'https://arxiv.org/abs/2203.01509'
+      link: 'https://arxiv.org/pdf/2203.01509'
     authors:
       - name: Thang Vu
         href: 'https://thangvubk.github.io'
@@ -478,7 +478,7 @@ papers:
   - name: hgr
     title:
       name: 'Hindsight Goal Ranking on Replay Buffer for Sparse Reward Environment'
-      link: 'https://arxiv.org/abs/2110.15043'
+      link: 'https://arxiv.org/pdf/2110.15043'
     authors:
       - me: true
       - name: Chang D. Yoo
@@ -512,7 +512,7 @@ papers:
   - name: robust_maml
     title:
       name: 'Robust MAML: Prioritization task buffer with adaptive learning process for model-agnostic meta-learning'
-      link: 'https://arxiv.org/abs/2103.08233'
+      link: 'https://arxiv.org/pdf/2103.08233'
     authors:
       - name: Xuan Thanh Nguyen
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
@@ -584,7 +584,7 @@ papers:
   - name: ccfdm
     title:
       name: 'Sample-efficient reinforcement learning representation learning with curiosity contrastive forward dynamics model'
-      link: 'https://arxiv.org/abs/2103.08255'
+      link: 'https://arxiv.org/pdf/2103.08255'
     authors:
       - name: Xuan Thanh Nguyen
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
