@@ -1,4 +1,30 @@
 papers:
+  - name: votp
+    title:
+      name: 'Video-Based Optimal Transport for Feedback-Efficient Offline Preference-Based Reinforcement Learning'
+#      link: 'https://arxiv.org/pdf/2507.23391'
+    authors:
+      - me: true
+      - name: Hwanhee Kim
+        href: 'https://openreview.net/profile?id=~Hwanhee_Kim2'
+      - name: Younghwan Lee
+        href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
+      - name: Chang D. Yoo
+        href: 'https://sanctusfactory.com/family.php'
+        star: false
+    conference:
+      name: 'International Conference on Machine Learning (ICML), 2026 (<oral>Spotlight, top 2.2%)</oral>)'
+    description: >-
+
+    links:
+#    - name: arXiv
+#      href: 'https://arxiv.org/abs/2507.23391'
+#    - name: code
+#      href: 'https://github.com/tunglm2203/plare'
+    img2: false
+    nogif: true
+    highlighted: true
+################################################################################################################
   - name: plare
     title:
       name: 'Policy Learning from Large Vision-Language Model Feedback Without Reward Modeling'
@@ -8,7 +34,7 @@ papers:
       - name: Donghoon Lee
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
       - name: Younghwan Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,YoungHwan%20Lee,-%E2%97%8B%20Email%20Address'
+        href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
         star: false
@@ -44,7 +70,7 @@ papers:
     authors:
       - me: true
       - name: Younghwan Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,YoungHwan%20Lee,-%E2%97%8B%20Email%20Address'
+        href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
       - name: Donghoon Lee
         href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
       - name: Sunho Kim
@@ -94,7 +120,7 @@ papers:
       - me: true
         star: true
       - name: Younghwan Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,YoungHwan%20Lee,-%E2%97%8B%20Email%20Address'
+        href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
         star: false
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
@@ -130,7 +156,7 @@ papers:
       link: 'https://arxiv.org/pdf/2504.08772'
     authors:
       - name: Younghwan Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,YoungHwan%20Lee,-%E2%97%8B%20Email%20Address'
+        href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
         star: True
       - me: true
         star: True
