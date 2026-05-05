@@ -51,7 +51,7 @@ papers:
 #      href: 'https://github.com/tunglm2203/plare'
     img2: false
     nogif: true
-    highlighted: true
+    highlighted: false
 ################################################################################################################
   - name: plare
     title:
