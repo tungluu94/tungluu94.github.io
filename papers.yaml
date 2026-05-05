@@ -13,7 +13,35 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'International Conference on Machine Learning (ICML), 2026 (<oral>Spotlight, top 2.2%)</oral>)'
+      name: 'International Conference on Machine Learning (ICML), 2026 (<oral>Spotlight, top 2.2%</oral>)'
+    description: >-
+
+    links:
+#    - name: arXiv
+#      href: 'https://arxiv.org/abs/2507.23391'
+#    - name: code
+#      href: 'https://github.com/tunglm2203/plare'
+    img2: false
+    nogif: true
+    highlighted: true
+################################################################################################################
+  - name: bfql
+    title:
+      name: 'Fast and Highly Expressive Policy Learning for Offline Reinforcement Learning via Bootstrapped Flow Q-Learning'
+#      link: 'https://arxiv.org/pdf/2507.23391'
+    authors:
+      - name: Xuan Thanh Nguyen
+        href: 'https://thanhkaist.github.io/'
+      - name: Tri Ton
+        href: 'https://triton99.github.io'
+      - name: Hongbin Choe
+#        href: ''
+      - me: true
+      - name: Chang D. Yoo
+        href: 'https://sanctusfactory.com/family.php'
+        star: false
+    conference:
+      name: 'International Conference on Machine Learning (ICML), 2026'
     description: >-
 
     links:
@@ -32,7 +60,7 @@ papers:
     authors:
       - me: true
       - name: Donghoon Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
+        href: ''
       - name: Younghwan Lee
         href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
       - name: Chang D. Yoo
@@ -72,9 +100,9 @@ papers:
       - name: Younghwan Lee
         href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
       - name: Donghoon Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
+        href: ''
       - name: Sunho Kim
-        href: 'https://sites.google.com/view/kaist-roboticslab/members?authuser=0#:~:text=Han%20%5BCV%5D-,Sunho%20Kim,-%5BCV%5D'
+        href: 'https://scholar.google.com/citations?user=ZJywJGkAAAAJ&hl=ko'
       - name: Min Jun Kim
         href: 'https://ee.kaist.ac.kr/en/professor/17499/'
       - name: Chang D. Yoo
@@ -115,7 +143,7 @@ papers:
       link: 'https://arxiv.org/pdf/2505.11221'
     authors:
       - name: Donghoon Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
+        href: ''
         star: true
       - me: true
         star: true
@@ -161,13 +189,13 @@ papers:
       - me: true
         star: True
       - name: Donghoon Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
+        href: ''
         star: false
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025 (<oral>Oral Presentation</oral>)'
+      name: 'IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025 (<oral>Oral</oral>)'
     description: >-
       In offline reinforcement learning (RL), learning from fixed datasets presents a promising solution for domains 
       where real-time interaction with the environment is expensive or risky. However, designing dense reward signals 
@@ -195,7 +223,7 @@ papers:
       - me: true
         star: True
       - name: Donghoon Lee
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Speech%20Processing-,Donghoon%20Lee,-%E2%97%8B%20Email%20Address'
+        href: ''
         star: True
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
@@ -234,8 +262,9 @@ papers:
     authors:
       - me: true
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - name: Tee Joshua Tian Jin
+        href: 'https://scholar.google.com/citations?user=5D-j9JYAAAAJ&hl=en'
       - name: Sungwoong Kim
         href: 'https://sites.google.com/view/swkim'
         star2: false
@@ -276,7 +305,7 @@ papers:
         href: 'https://thangvubk.github.io'
       - name: Kookhoi Kim
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - me: true
       - name:  Junyeong Kim
         href: 'https://sites.google.com/view/imr-lab'
@@ -319,7 +348,7 @@ papers:
       link: 'https://ieeexplore.ieee.org/document/10537203'
     authors:
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - me: true
       - name: Tri Ton
         href: 'https://triton99.github.io'
@@ -362,7 +391,7 @@ papers:
       link: 'https://arxiv.org/pdf/2309.11782'
     authors:
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - name: Trung X. Pham
         href: 'https://trungpx.github.io'
       - name: Chaoning Zhang
@@ -406,12 +435,12 @@ papers:
       - name: Kookhoi Kim
       - me: true
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022'
+      name: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022 (<oral>Oral, top 4%</oral>)'
     description: >-
       Existing state-of-the-art 3D instance segmentation methods perform semantic segmentation followed by grouping. 
       The hard predictions are made when performing semantic segmentation such that each point is associated with a 
@@ -444,7 +473,7 @@ papers:
       - name: Thang Vu
         href: 'https://thangvubk.github.io'
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
         star: false
@@ -475,7 +504,7 @@ papers:
     authors:
       - me: true
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - name: Thang Vu
         href: 'https://thangvubk.github.io'
       - name: Chang D. Yoo
@@ -541,7 +570,7 @@ papers:
       link: 'https://arxiv.org/pdf/2103.08233'
     authors:
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - me: true
       - name: Trung X. Pham
         href: 'https://trungpx.github.io'
@@ -582,7 +611,7 @@ papers:
       - name: Kookhoi Kim
       - name: Haeyong Kang
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
       - me: true
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
@@ -613,7 +642,7 @@ papers:
       link: 'https://arxiv.org/pdf/2103.08255'
     authors:
       - name: Xuan Thanh Nguyen
-        href: 'https://sanctusfactory.com/family_02.php#:~:text=Machine%20Learning-,Nguyen%20Xuan%20Thanh,-%E2%97%8B%20Email%20Address'
+        href: 'https://thanhkaist.github.io/'
         star: true
       - me: true
         star: true
