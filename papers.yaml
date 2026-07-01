@@ -2,7 +2,7 @@ papers:
   - name: votp
     title:
       name: 'Video-Based Optimal Transport for Feedback-Efficient Offline Preference-Based Reinforcement Learning'
-      link: 'https://arxiv.org/abs/2606.16856v1'
+      link: 'https://arxiv.org/pdf/2606.16856v1'
     authors:
       - me: true
       - name: Hwanhee Kim
@@ -41,7 +41,7 @@ papers:
   - name: bfql
     title:
       name: 'Fast and Highly Expressive Policy Learning for Offline Reinforcement Learning via Bootstrapped Flow Q-Learning'
-      link: 'https://arxiv.org/abs/2606.10613'
+      link: 'https://arxiv.org/pdf/2606.10613'
     authors:
       - name: Xuan Thanh Nguyen
         href: 'https://thanhkaist.github.io/'
@@ -85,7 +85,6 @@ papers:
     authors:
       - me: true
       - name: Donghoon Lee
-        href: ''
       - name: Younghwan Lee
         href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
       - name: Chang D. Yoo
@@ -125,7 +124,6 @@ papers:
       - name: Younghwan Lee
         href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
       - name: Donghoon Lee
-        href: ''
       - name: Sunho Kim
         href: 'https://scholar.google.com/citations?user=ZJywJGkAAAAJ&hl=ko'
       - name: Min Jun Kim
@@ -168,7 +166,6 @@ papers:
       link: 'https://arxiv.org/pdf/2505.11221'
     authors:
       - name: Donghoon Lee
-        href: ''
         star: true
       - me: true
         star: true
@@ -210,11 +207,10 @@ papers:
     authors:
       - name: Younghwan Lee
         href: 'https://scholar.google.com/citations?user=e61HtZUAAAAJ&hl=en'
-        star: True
+        star: true
       - me: true
-        star: True
+        star: true
       - name: Donghoon Lee
-        href: ''
         star: false
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
@@ -246,10 +242,9 @@ papers:
       link: 'https://arxiv.org/pdf/2410.03408'
     authors:
       - me: true
-        star: True
+        star: true
       - name: Donghoon Lee
-        href: ''
-        star: True
+        star: true
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
         star: false
@@ -292,10 +287,10 @@ papers:
         href: 'https://scholar.google.com/citations?user=5D-j9JYAAAAJ&hl=en'
       - name: Sungwoong Kim
         href: 'https://sites.google.com/view/swkim'
-        star2: false
+        star: false
       - name: Chang D. Yoo
         href: 'https://sanctusfactory.com/family.php'
-        star2: false
+        star: false
     conference:
       name: 'International Conference on Intelligent Robots and Systems (IROS), 2024'
     description: >-
@@ -769,4 +764,4 @@ papers:
         href: 'https://github.com/thangvubk/FEQE'
     img2: false
     nogif: true
-    highlighted: true
+    highlighted: false
