@@ -2,7 +2,7 @@ papers:
   - name: votp
     title:
       name: 'Video-Based Optimal Transport for Feedback-Efficient Offline Preference-Based Reinforcement Learning'
-#      link: 'https://arxiv.org/pdf/2507.23391'
+      link: 'https://arxiv.org/abs/2606.16856v1'
     authors:
       - me: true
       - name: Hwanhee Kim
@@ -13,14 +13,27 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'International Conference on Machine Learning (ICML), 2026 (<oral>Oral, top 0.7%</oral>)'
+      name: 'International Conference on Machine Learning (ICML), 2026 (<oral>Oral presentation, top 0.7%</oral>)'
     description: >-
-
+      Conveying complex objectives to reinforcement learning (RL) agents often requires meticulous reward engineering. 
+      Preference-based RL (PbRL) offers a promising alternative by learning reward functions from human feedback, but 
+      its scalability is hindered by high labeling costs. Inspired by advances in Video Foundation Models (ViFMs), we 
+      present Video-based Optimal Transport Preference (VOTP), a semi-supervised framework that learns effective reward 
+      functions from only a handful of labels. By leveraging optimal transport to align visual trajectories within the 
+      rich representation space of ViFMs, VOTP effectively generates high-fidelity pseudo-labels for large amounts of 
+      unlabeled data, substantially reducing human supervision. Extensive experiments across locomotion and manipulation 
+      benchmarks demonstrate the superiority of VOTP, which outperforms state-of-the-art offline PbRL methods under 
+      limited feedback budgets. We also showcase the robustness of VOTP in the presence of visual distractors and 
+      validate its utility on real robotic tasks, where it learns meaningful rewards with minimal human input.
     links:
-#    - name: arXiv
-#      href: 'https://arxiv.org/abs/2507.23391'
-#    - name: code
-#      href: 'https://github.com/tunglm2203/plare'
+    - name: arXiv
+      href: 'https://arxiv.org/abs/2606.16856v1'
+    - name: openreview
+      href: 'https://openreview.net/forum?id=G8LVO5easu'
+    - name: website
+      href: 'https://votp2026.github.io/'
+    - name: code
+      href: 'https://github.com/tunglm2203/votp'
     img2: false
     nogif: true
     highlighted: true
@@ -28,7 +41,7 @@ papers:
   - name: bfql
     title:
       name: 'Fast and Highly Expressive Policy Learning for Offline Reinforcement Learning via Bootstrapped Flow Q-Learning'
-#      link: 'https://arxiv.org/pdf/2507.23391'
+      link: 'https://arxiv.org/abs/2606.10613'
     authors:
       - name: Xuan Thanh Nguyen
         href: 'https://thanhkaist.github.io/'
@@ -43,10 +56,22 @@ papers:
     conference:
       name: 'International Conference on Machine Learning (ICML), 2026'
     description: >-
-
+      Diffusion-based Q-learning has emerged as a powerful paradigm for offline reinforcement learning, but its reliance 
+      on multi-step denoising makes both training and inference computationally expensive and brittle. Recent efforts to 
+      accelerate diffusion Q-learning toward single-step action generation typically introduce auxiliary networks, 
+      policy distillation, or multi-phase training, which frequently compromise simplicity, stability, or performance. 
+      To address these limitations, we introduce Bootstrapped Flow Q-Learning (BFQ), a novel framework that enables 
+      accurate single-step action generation during both training and inference, without auxiliary networks or 
+      distillation procedures. BFQ adopts a divide-and-conquer view of the displacement vector along the flow path: 
+      it begins by learning short-range displacements that can be accurately estimated from the Flow Matching marginal
+      velocity, and bootstraps these components to directly learn a noise-to-action mapping in a single step. 
+      This formulation eliminates multi-step denoising, resulting in a learning procedure that is substantially faster, 
+      simpler, and more robust. Extensive D4RL evaluations show that BFQ improves performance while significantly 
+      reducing computational cost compared to multi-step diffusion baselines, demonstrating that single-step action 
+      generation suffices for high-performance offline Reinforcement Learning.
     links:
-#    - name: arXiv
-#      href: 'https://arxiv.org/abs/2507.23391'
+    - name: arXiv
+      href: 'https://arxiv.org/abs/2606.10613'
 #    - name: code
 #      href: 'https://github.com/tunglm2203/plare'
     img2: false
@@ -67,7 +92,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025'
+      name: 'International Conference on Intelligent Robots and Systems (IROS), 2025'
     description: >-
       Offline reinforcement learning (RL) provides a powerful framework for training robotic agents using pre-collected, 
       suboptimal datasets, eliminating the need for costly, time-consuming, and potentially hazardous online interactions. 
@@ -154,7 +179,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025'
+      name: 'International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025'
     description: >-
       Recent research highlights the potential of multi-modal foundation models in tackling complex decision-making 
       challenges. However, their large parameters make real-world deployment resource-intensive and often impractical 
@@ -195,7 +220,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025 (<oral>Oral</oral>)'
+      name: 'International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025 (<oral>Oral presentation</oral>)'
     description: >-
       In offline reinforcement learning (RL), learning from fixed datasets presents a promising solution for domains 
       where real-time interaction with the environment is expensive or risky. However, designing dense reward signals 
@@ -229,7 +254,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024'
+      name: 'International Conference on Intelligent Robots and Systems (IROS), 2024'
     description: >-
       Recent work in offline reinforcement learning (RL) has demonstrated the effectiveness of formulating 
       decision-making as return-conditioned supervised learning. Notably, the decision transformer (DT) architecture 
@@ -272,7 +297,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star2: false
     conference:
-      name: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024'
+      name: 'International Conference on Intelligent Robots and Systems (IROS), 2024'
     description: >-
       Recent studies reveal that well-performing reinforcement learning (RL) agents in training often lack resilience 
       against adversarial perturbations during deployment. This highlights the importance of building a robust agent 
@@ -313,7 +338,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024'
+      name: 'Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024'
     description: >-
       This paper considers a network referred to as SoftGroup for accurate and scalable 3D instance segmentation. 
       Existing state-of-the-art methods produce hard semantic predictions followed by grouping instance segmentation 
@@ -340,7 +365,7 @@ papers:
         href: 'https://github.com/thangvubk/SoftGroup'
     img2: false
     nogif: true
-    highlighted: true
+    highlighted: false
 ################################################################################################################
   - name: mimo
     title:
@@ -440,7 +465,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022 (<oral>Oral, top 4%</oral>)'
+      name: 'Conference on Computer Vision and Pattern Recognition (CVPR), 2022 (<oral>Oral presentation, top 4%</oral>)'
     description: >-
       Existing state-of-the-art 3D instance segmentation methods perform semantic segmentation followed by grouping. 
       The hard predictions are made when performing semantic segmentation such that each point is associated with a 
@@ -579,7 +604,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021'
+      name: 'International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2021'
     description: >-
       Model agnostic meta-learning (MAML) is a popular state-of-the-art meta-learning algorithm that provides good 
       weight initialization of a model given a variety of learning tasks. The model initialized by provided weight 
@@ -617,7 +642,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE International Conference on Image Processing (ICIP), 2021'
+      name: 'International Conference on Image Processing (ICIP), 2021'
     description: >-
       A bounding box commonly serves as the proxy for 2D object detection. However, extending this practice to 3D 
       detection raises sensitivity to localization error. This problem is acute on flat objects since small localization 
@@ -652,7 +677,7 @@ papers:
         href: 'https://sanctusfactory.com/family.php'
         star: false
     conference:
-      name: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021'
+      name: 'International Conference on Intelligent Robots and Systems (IROS), 2021'
     description: >-
       Developing an agent in reinforcement learning (RL) that is capable of performing complex control tasks directly 
       from high-dimensional observation such as raw pixels is yet a challenge as efforts are made towards improving 
