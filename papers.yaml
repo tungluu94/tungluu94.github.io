@@ -1,4 +1,42 @@
 papers:
+  - name: pgpg
+    title:
+      name: 'Progress-Guided Preference Generation for Aligning Generative Control Policies'
+      link: ''
+    authors:
+      - me: true
+      - name: Tri Ton
+        href: 'https://triton99.github.io'
+      - name: Minh Duc Nguyen
+        href: 'https://openreview.net/profile?id=~Minh_Duc_Nguyen3'
+      - name: Xuan Thanh Nguyen
+        href: 'https://thanhkaist.github.io/'
+      - name: Nguyen Gia Binh
+        href: 'https://openreview.net/profile?id=~Nguyen_Gia_Binh1'
+      - name: Quang Tan Nguyen
+        href: 'https://openreview.net/profile?id=~Quang_Tan_Nguyen1'
+      - name: Vu N. Duong
+        href: 'https://scholar.google.com/citations?user=ilaMdTEAAAAJ&hl=en'
+      - name: Daniel Sonntag
+        href: 'https://www.dfki.de/~daso02/'
+      - name: Duy Minh Ho Nguyen
+        href: 'https://duyhominhnguyen.github.io/'
+      - name: Vien Anh Ngo
+        href: 'https://vienngo.github.io/'
+      - name: Chang D. Yoo
+        href: 'https://sanctusfactory.com/family.php'
+        star: false
+    conference:
+      name: 'Conference on Robot Learning (CoRL), 2026'
+    description: >-
+      Generative policies have achieved strong performance in imitation learning tasks, but their success is often constrained by the limited availability of expert demonstrations. Although preference-based fine-tuning can leverage suboptimal rollouts to improve performance, existing approaches heavily rely on expensive human annotations. In this work, we introduce Progress-Guided Preference Generation (PGPG), an unsupervised preference alignment framework that eliminates the need for human-in-the-loop supervision. Our method leverages ordered coverage alignment to measure sequential progress relative to a small set of expert demonstrations, enabling the automatic extraction of pseudo-preference labels from autonomously collected rollouts. Furthermore, we introduce key enhancements to improve the reliability of these progress-guided preferences, enabling effective fine-tuning of pretrained generative policies without requiring manually designed reward functions. Extensive experiments across a suite of challenging long-horizon manipulation tasks demonstrate that PGPG outperforms standard supervised fine-tuning baselines. Moreover, our conceptually simple framework is broadly applicable across multiple classes of generative policies, demonstrating strong versatility when integrated with both diffusion and flow-matching policies.
+    links:
+      - name: arXiv
+        href: ''
+    img2: false
+    nogif: true
+    highlighted: true
+  ################################################################################################################
   - name: votp
     title:
       name: 'Video-Based Optimal Transport for Feedback-Efficient Offline Preference-Based Reinforcement Learning'
