@@ -156,13 +156,13 @@
 
   <div style="width:100%; text-align:left; margin-top:10px;" class="new-list">
   <ul id="news-list">
-    <li><strong>09/2026</strong>: A paper (PGPG) has been accepted at CoRL 2026.</li>
-    <li><strong>07/2026</strong>: VOTP received the Nebius <a href="https://nebius.science/stories/icml-papers-that-matter" target="_blank" rel="noopener">ICML 2026: Papers That Matter</a> Cloud Credits Award.</li>
-    <li><strong>05/2026</strong>: Two papers have been accepted at ICML 2026 (VOTP was selected for an <span style="color:red;">Oral presentation</span>).</li>
-    <li><strong>06/2025</strong>: A paper (PLARE) has been accepted at IROS 2025.</li>
-    <li><strong>05/2025</strong>: A paper (ERL-VLM) has been accepted at ICML 2025.</li>
-    <li><strong>12/2024</strong>: Two papers (LVLM2P and RG-VLM) have been accepted at ICASSP 2025.</li>
-    <li><strong>06/2024</strong>: Two papers (VQ-RL and PCDT) have been accepted at IROS 2024.</li>
+    <li><strong>09/2026</strong>: A paper (<a href="#paper-pgpg" class="news-link" onclick="return jumpToPaper('pgpg')">PGPG</a>) has been accepted at CoRL 2026.</li>
+    <li><strong>07/2026</strong>: <a href="#paper-votp" class="news-link" onclick="return jumpToPaper('votp')">VOTP</a> received the Nebius <a href="https://nebius.science/stories/icml-papers-that-matter" target="_blank" rel="noopener">ICML 2026: Papers That Matter</a> Cloud Credits Award.</li>
+    <li><strong>05/2026</strong>: Two papers have been accepted at ICML 2026 (<a href="#paper-votp" class="news-link" onclick="return jumpToPaper('votp')">VOTP</a> was selected for an <span style="color:red;">Oral presentation</span>).</li>
+    <li><strong>06/2025</strong>: A paper (<a href="#paper-plare" class="news-link" onclick="return jumpToPaper('plare')">PLARE</a>) has been accepted at IROS 2025.</li>
+    <li><strong>05/2025</strong>: A paper (<a href="#paper-erlvlm" class="news-link" onclick="return jumpToPaper('erlvlm')">ERL-VLM</a>) has been accepted at ICML 2025.</li>
+    <li><strong>12/2024</strong>: Two papers (<a href="#paper-lvlm2p" class="news-link" onclick="return jumpToPaper('lvlm2p')">LVLM2P</a> and <a href="#paper-rgvlm" class="news-link" onclick="return jumpToPaper('rgvlm')">RG-VLM</a>) have been accepted at ICASSP 2025.</li>
+    <li><strong>06/2024</strong>: Two papers (<a href="#paper-vq_robust_rl" class="news-link" onclick="return jumpToPaper('vq_robust_rl')">VQ-RL</a> and <a href="#paper-pcdt" class="news-link" onclick="return jumpToPaper('pcdt')">PCDT</a>) have been accepted at IROS 2024.</li>
   </ul>
   <button type="button" id="news-toggle" class="news-toggle" style="display:none;" onclick="toggleNews(this)">Show more</button>
 </div>
@@ -189,6 +189,21 @@
       Array.prototype.forEach.call(extras, function (li) { li.style.display = expanded ? 'none' : 'list-item'; });
       btn.setAttribute('data-expanded', expanded ? '0' : '1');
       btn.textContent = expanded ? 'Show more' : 'Show less';
+  }
+</script>
+<script>
+  function jumpToPaper(id) {
+      var el = document.getElementById('paper-' + id);
+      if (!el) return false;
+      var hidden = el.classList.contains('hiddenPubs') && getComputedStyle(el).display === 'none';
+      if (hidden && typeof pubs_on === 'function') pubs_on(); // reveal all when target is under "Highlighted"
+      setTimeout(function () {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.classList.remove('paper-flash');
+          void el.offsetWidth; // reflow to restart the animation
+          el.classList.add('paper-flash');
+      }, hidden ? 380 : 0);
+      return false; // cancel the default instant hash jump
   }
 </script>
 
@@ -228,7 +243,7 @@
   <script id="template" type="text/x-handlebars-template">
     {{#papers}}
     <div style="width:100%;margin-left:0px;margin-right:0px;margin-top:10px; flex-wrap:wrap-reverse; "
-         class="table-like {{#unless highlighted}}hiddenPubs{{/unless}}"
+         id="paper-{{name}}" class="table-like {{#unless highlighted}}hiddenPubs{{/unless}}"
          onmouseout="gif_stop('{{name}}_image', '{{name}}_gif')"
          onmouseover="gif_start('{{name}}_image', '{{name}}_gif')">
       <div class="zero" style="flex: 1 0 270px;margin-top:0px;margin-right:20px;max-width:270px;">
@@ -257,7 +272,7 @@
         <br>
         {{#authors}}
         {{#if me}}
-        <strong>Tung M. Luu</strong>{{#if star}}*{{/if}}{{#unless @last}}, {{/unless}} {{else}} {{#if href}}
+        <strong class="myname">Tung M. Luu</strong>{{#if star}}*{{/if}}{{#unless @last}}, {{/unless}} {{else}} {{#if href}}
         <a class="black_link" href={{href}}>{{name}}</a>{{#if star}}*{{/if}}{{#if star2}}<sup>&#8224;</sup>
         {{/if}}{{#unless @last}}, {{/unless}}
         {{else}}
@@ -302,7 +317,7 @@
     <heading>Academic Service</heading>
   </div>
   <div style="width:100%; text-align:left; margin-top:10px;">
-    <ul>
+    <ul class="bullets">
       <li><strong>Reviewer:</strong> CoRL (2026), NeurIPS (2026), ICML (<a href="https://drive.google.com/file/d/1p7tKA63xCcOkdJR7CzrkiAZmMLcCezI2/view?usp=sharing" target="_blank" rel="noopener">2026</a>), ICLR (2025, 2026),
         ICCV (<a href="https://iccv.thecvf.com/Conferences/2025/ProgramCommittee#all-reviewers-w-at-least-1-review" target="_blank" rel="noopener">2025</a>), ECCV (<a href="https://eccv.ecva.net/Conferences/2024/AllReviewers" target="_blank" rel="noopener">2024</a>),
         IROS (2024, 2025), ICRA (<a href="https://www.ieee-ras.org/images/files/ICRA22_ReviewerList_Formated.pdf" target="_blank" rel="noopener">2022</a>).
@@ -311,14 +326,14 @@
   </div>
 
   <div style="width:100%; text-align:left; margin-top:20px;">
-      <heading>Teaching Assistance</heading>
+      <heading>Teaching Assistant</heading>
   </div>
   <div style="width:100%; text-align:left; margin-top:10px;">
-    <ul>
-      <li><strong>Seongnam - KAIST Next Generation ICT Research Center Reinforcement Learning Course</strong>: 2024 Fall</li>
-      <li><strong>Seongnam - KAIST Next Generation ICT Research Center EE Co-op+ Joint Research Program</strong>: 2022 Fall, 2023 Spring</li>
-      <li><strong>Statistical Learning Theory</strong>: 2019 Fall, 2020 Fall</li>
-      <li><strong>Introduction to Machine Learning</strong>: 2020 Spring</li>
+    <ul class="bullets">
+      <li><strong>Seongnam - KAIST Next Generation ICT Research Center Reinforcement Learning Course</strong>: 2024 Fall.</li>
+      <li><strong>Seongnam - KAIST Next Generation ICT Research Center EE Co-op+ Joint Research Program</strong>: 2022 Fall, 2023 Spring.</li>
+      <li><strong>Statistical Learning Theory</strong>: 2019 Fall, 2020 Fall.</li>
+      <li><strong>Introduction to Machine Learning</strong>: 2020 Spring.</li>
     </ul>
   </div>
 
@@ -326,9 +341,9 @@
       <heading>Experience</heading>
   </div>
   <div style="width:100%; text-align:left; margin-top:10px;">
-    <ul>
-      <li><strong>2015-2017:</strong> Software Engineer at <a href="https://ginno.com">G-Innovations</a></li>
-      <li><strong>2014-2017:</strong> Undergraduate Researcher at <a href="https://sites.google.com/set.hust.edu.vn/hust-edabk-lab/home?authuser=0">EDABK Lab</a></li>
+    <ul class="bullets">
+      <li><strong>2015-2017:</strong> Software Engineer at <a href="https://ginno.com">G-Innovations</a>.</li>
+      <li><strong>2014-2017:</strong> Undergraduate Researcher at <a href="https://sites.google.com/set.hust.edu.vn/hust-edabk-lab/home?authuser=0">EDABK Lab</a>.</li>
     </ul>
   </div>
 
