@@ -11,8 +11,8 @@ a {
 
 a:focus,
 a:hover {
-  color: #a723d3;
-  text-decoration: none;
+  color: #0f5aa8;
+  text-decoration: underline;
 }
 
 /* toggling stuff */
@@ -42,7 +42,7 @@ a {
 
 oral {
   font-weight: bold;
-  color: red;
+  color: #c0392b;
 }
 
 heading {
@@ -303,7 +303,7 @@ b {
 }
 
 .toggle input:checked+.slider {
-  background-color: #2196F3;
+  background-color: #1772d0;
 }
 
 .toggle input:checked+.slider::before {
@@ -398,7 +398,7 @@ b {
 
 /* News method links -> jump to paper */
 .news-link {
-  color: #3a9bdc; /* light blue */
+  color: #3f8fd9; /* light blue */
   text-decoration: none;
 }
 .news-link:hover {
