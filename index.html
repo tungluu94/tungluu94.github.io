@@ -155,7 +155,7 @@
   </div>
 
   <div style="width:100%; text-align:left; margin-top:10px;" class="new-list">
-  <ul>
+  <ul id="news-list">
     <li><strong>09/2026</strong>: A paper (PGPG) has been accepted at CoRL 2026.</li>
     <li><strong>07/2026</strong>: VOTP received the Nebius <a href="https://nebius.science/stories/icml-papers-that-matter" target="_blank" rel="noopener">ICML 2026: Papers That Matter</a> Cloud Credits Award.</li>
     <li><strong>05/2026</strong>: Two papers have been accepted at ICML 2026 (VOTP was selected for an <span style="color:red;">Oral presentation</span>).</li>
@@ -164,7 +164,33 @@
     <li><strong>12/2024</strong>: Two papers (LVLM2P and RG-VLM) have been accepted at ICASSP 2025.</li>
     <li><strong>06/2024</strong>: Two papers (VQ-RL and PCDT) have been accepted at IROS 2024.</li>
   </ul>
+  <button type="button" id="news-toggle" class="news-toggle" style="display:none;" onclick="toggleNews(this)">Show more</button>
 </div>
+<script>
+  (function () {
+      var list = document.getElementById('news-list');
+      if (!list) return;
+      var items = Array.prototype.slice.call(list.getElementsByTagName('li'));
+      function yearOf(li) { var m = li.textContent.match(/(\d{4})/); return m ? parseInt(m[1], 10) : 0; }
+      var distinct = items.map(yearOf).filter(function (v) { return v > 0; })
+          .filter(function (v, i, a) { return a.indexOf(v) === i; })
+          .sort(function (a, b) { return b - a; });
+      var keep = distinct.slice(0, 2); // two most recent years
+      var hasHidden = false;
+      items.forEach(function (li) {
+          if (keep.indexOf(yearOf(li)) === -1) { li.classList.add('news-extra'); li.style.display = 'none'; hasHidden = true; }
+      });
+      if (hasHidden) document.getElementById('news-toggle').style.display = '';
+  })();
+
+  function toggleNews(btn) {
+      var expanded = btn.getAttribute('data-expanded') === '1';
+      var extras = document.querySelectorAll('#news-list .news-extra');
+      Array.prototype.forEach.call(extras, function (li) { li.style.display = expanded ? 'none' : 'list-item'; });
+      btn.setAttribute('data-expanded', expanded ? '0' : '1');
+      btn.textContent = expanded ? 'Show more' : 'Show less';
+  }
+</script>
 
   <style>
       .hiddenDesc {

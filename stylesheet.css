@@ -348,3 +348,32 @@ b {
 .toggle input:checked~.labels::before {
   opacity: 1;
 }
+
+/* News list */
+.new-list ul {
+  list-style: disc;
+  display: block;
+  margin: 0;
+  padding-left: 1.5em;
+}
+.new-list li {
+  display: list-item;
+  margin-bottom: 0.45em;
+  line-height: 1.5;
+}
+.news-toggle {
+  margin-top: 8px;
+  margin-left: 1.5em;
+  background: none;
+  border: none;
+  color: #888;
+  font-family: inherit;
+  font-size: 13px;
+  padding: 0;
+  cursor: pointer;
+  transition: color .15s ease;
+}
+.news-toggle:hover {
+  color: #555;
+  text-decoration: underline;
+}
