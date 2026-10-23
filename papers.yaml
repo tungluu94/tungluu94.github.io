@@ -2,7 +2,7 @@ papers:
   - name: pgpg
     title:
       name: 'Progress-Guided Preference Generation for Aligning Generative Control Policies'
-      link: ''
+      link: 'https://arxiv.org/pdf/2610.25692'
     authors:
       - me: true
       - name: Tri Ton
@@ -31,8 +31,14 @@ papers:
     description: >-
       Generative policies have achieved strong performance in imitation learning tasks, but their success is often constrained by the limited availability of expert demonstrations. Although preference-based fine-tuning can leverage suboptimal rollouts to improve performance, existing approaches heavily rely on expensive human annotations. In this work, we introduce Progress-Guided Preference Generation (PGPG), an unsupervised preference alignment framework that eliminates the need for human-in-the-loop supervision. Our method leverages ordered coverage alignment to measure sequential progress relative to a small set of expert demonstrations, enabling the automatic extraction of pseudo-preference labels from autonomously collected rollouts. Furthermore, we introduce key enhancements to improve the reliability of these progress-guided preferences, enabling effective fine-tuning of pretrained generative policies without requiring manually designed reward functions. Extensive experiments across a suite of challenging long-horizon manipulation tasks demonstrate that PGPG outperforms standard supervised fine-tuning baselines. Moreover, our conceptually simple framework is broadly applicable across multiple classes of generative policies, demonstrating strong versatility when integrated with both diffusion and flow-matching policies.
     links:
-      - name: arXiv
-        href: ''
+    - name: arXiv
+      href: 'https://arxiv.org/abs/2610.25692'
+    - name: openreview
+      href: 'https://openreview.net/forum?id=J8pJIDI6rM'
+    - name: website
+      href: 'https://pgpg2026.github.io/'
+    - name: code
+      href: 'https://github.com/tunglm2203/pgpg'
     img2: false
     nogif: true
     highlighted: true
